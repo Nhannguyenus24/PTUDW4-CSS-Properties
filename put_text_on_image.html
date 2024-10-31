@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Put text on image</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      .container {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .container img {
+        max-height: 100vh;
+        display: block;
+      }
+
+      .text-block {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+https://drive.google.com/file/d/1ZDS9JbOtRbnyefTF73wRnX6S4EqiOquv/view?usp=sharing
+        Biết rằng text-block:
+        - Màu chữ white
+        - Nội dung chữ luôn nằm giữa hình
+    -->
+    <div class="container">
+      <img
+        src="https://images.unsplash.com/photo-1551304885-7d8cc4ac849e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=80"
+        alt=""
+        style="width: 100%"
+      />
+      <div class="text-block">
+        <h3>Put Text on Image</h3>
+      </div>
+    </div>
+  </body>
+</html>
